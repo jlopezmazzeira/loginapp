@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Bienvenido
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item text-center>
+      <img [src]="user.imagen">
+    </ion-item>
+    <ion-item>{{ user.nombre }}</ion-item>
+    <ion-item>{{ user.email }}</ion-item>
+    <ion-item>{{ user.uid }}</ion-item>
+    <ion-item>{{ user.provider }}</ion-item>
+    <ion-item>
+      <button ion-button (click)="salir()" color="danger" block> Salir</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
